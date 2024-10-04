@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Selecionar Moeda</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Escolha uma Moeda</h2>
+  <ion-card *ngFor="let coin of coins" (click)="selectCoin(coin.id)">
+    <ion-card-header>
+      <ion-card-title>{{ coin.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ coin.description }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

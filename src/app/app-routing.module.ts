@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'coin-chart',
+    loadChildren: () => import('./coin-chart/coin-chart.module').then( m => m.CoinChartPageModule)
+  },
+  {
+    path: 'select-chart',
+    loadChildren: () => import('./select-chart/select-chart.module').then( m => m.SelectChartPageModule)
+  },
+  {
+    path: 'select-coin',
+    loadChildren: () => import('./select-coin/select-coin.module').then( m => m.SelectCoinPageModule)
+  },
 ];
 
 @NgModule({
