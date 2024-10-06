@@ -3,7 +3,6 @@
     <ion-title>Selecionar Moeda</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content class="ion-padding">
   <h2>Escolha uma Moeda</h2>
   <ion-card *ngFor="let coin of coins" (click)="selectCoin(coin.id)">

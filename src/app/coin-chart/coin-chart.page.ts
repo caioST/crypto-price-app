@@ -9,7 +9,7 @@ import { Chart, registerables } from 'chart.js';
   styleUrls: ['./coin-chart.page.scss'],
 })
 export class CoinChartPage implements OnInit {
-  coinId!: string; // Adicione "!" para indicar que será inicializado antes do uso
+  coinId!: string;
   coinName: string = '';
   prices: any = {};
   coinChart: any;
